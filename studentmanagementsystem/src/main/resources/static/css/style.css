@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+
+  }
+
+  nav{
+      background-color:#6a9739;
+
+  }
+  nav .div{
+  color:#fff;
+  }
+
+  .edit_btn{
+  background-color:#6a9739;
+  border-color:#6a9739;
+  color:#fff;
+  }
+
+   .edit_btn:hover{
+   color:#6a9739;
+   background-color:#fff;
+   border-color:#6a9739;
+   }
+
+     .edit_btn:active{
+     background-color:#6a9739;
+     border-color:#6a9739;
+     color:#fff;
+     }
+
+     .edit_btn:visited{
+          background-color:#6a9739;
+          border-color:#6a9739;
+          color:#fff;
+          }
+
+.text-color-custom{
+color:#6a9739;
+}
+
+.table-custom-style{
+border-color:#6a9739;
+background-color:#e6ded3;
+}
+
+.table-custom-style thead th{
+background-color:#6a9739;
+color:#fff;
+}
+
+.tbody-custom-style{
+background-color:#e6ded3;}
