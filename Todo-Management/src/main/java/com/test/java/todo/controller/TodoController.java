@@ -5,6 +5,7 @@ import com.test.java.todo.entity.Todo;
 import com.test.java.todo.service.TodoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -52,5 +53,21 @@ public class TodoController {
         todoService.deleteTodo(todoId);
 
         return ResponseEntity.ok("Todo deleted successfully!.");
+    }
+
+    //Build complete todo
+    @PatchMapping("{todoId}/complete")
+    public ResponseEntity<TodoDto> completeTodo(@PathVariable Long todoId){
+
+        TodoDto todo = todoService.completeTodo(todoId);
+        return ResponseEntity.ok(todo);
+    }
+
+    @PatchMapping("{todoId}/incomplete")
+    public ResponseEntity<TodoDto> incompleteTodo(@PathVariable Long todoId){
+
+
+        TodoDto todo = todoService.incompleteTodo(todoId);
+        return ResponseEntity.ok(todo);
     }
 }
